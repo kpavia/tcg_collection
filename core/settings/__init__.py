@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pokemon.apps.PokemonConfig',
     'mtg.apps.MtgConfig',
+    'user.apps.UserConfig',
     'rest_framework',
 ]
 
@@ -83,20 +84,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+AUTH_USER_MODEL = 'user.User'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd7bcd8lk9k3npa',
-        'HOST': 'ec2-44-193-188-118.compute-1.amazonaws.com',
-        'USER': 'fdhyvshpqbogqu',
-        'PASSWORD': 'bf28cb27e25c2ab9972eca3f818aba0548dca8026a6cb6b78f3a5ae399ade599',
-        'PORT': '5432'
-    }
-}
+
 
 
 # Password validation
