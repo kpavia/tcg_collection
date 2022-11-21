@@ -1,0 +1,27 @@
+{% extends 'mtg/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="row">
+        <div class="col col-md-1">
+
+        </div>
+        <div class="col col-md-4">
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="mb-4">Register Today</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group mb-3">
+                    <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                </div>
+            </form>
+            <div class="border-top pt-3">
+                <small class="text-muted">Already have an account? <a href="#" class="ml-2">Sign In</a></small>
+            </div>
+        </div>
+        <div class="col col-md-7">
+
+        </div>
+    </div>
+{% endblock content %}
