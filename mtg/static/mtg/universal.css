@@ -1,2 +1,4 @@
 .center {text-align: center;}
 .navbar-right {margin-left: auto;}
+.nav-bg {background-color: #6171b7;}
+a.nav-link, a.navbar-brand {color: #FFF;}
